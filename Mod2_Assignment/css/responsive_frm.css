@@ -1,0 +1,35 @@
+/* Simple Responsive Framework. */
+.row {
+  width: 100%; 
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-3 {
+    float: left;
+    width: 29%;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+float: left;
+  }
+
+  .col-md-6 {
+    width: 46%;
+  }
+
+  .col-md-12 {
+    width: 96%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 96%;
+  }
+}
